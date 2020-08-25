@@ -83,72 +83,49 @@
 	</header>
 	<!-- ***** Header Area End ***** -->
 
+	<!-- Dont remove id filters -->
+	<div id="filters" class="container-fluid mb-5 mt-4">  
+	  <button class="btn btn-outline-primary" aria-pressed="true" data-filter="*">Todos</button>
+	  <button class="btn btn-outline-primary" data-filter=".design">Design</button>
+	  <button class="btn btn-outline-primary" data-filter=".webdesign">Web Design</button>
+	  <button class="btn btn-outline-primary" data-filter=".logotipos">Logotipos</button>
+	  <button class="btn btn-outline-primary" data-filter=".videomaker">VideoMaker</button>
+	</div>
 
-	<!-- ***** Filter galary  Start ***** -->
+	<script>
+	  $('#filters button').click(function(){
+	    e.preventDefault();
+	  })
+	</script>
+	<!--  Dont remove class grid -->
+	<div class="grid"> 
+	   
+	  <div class="container"><!--  Dont remove class container -->
+	      <!--  use the data-category always together in the class  -->
+	      <div class="element-item design" data-category="design"><!--  Dont remove class element-item -->
+	        <img src="https://cdn04.masterstudies.com/gfx/image/listing-page/80/main/Estudos-de-Design.jpg" class="w-100 h-100">
+	      </div>
 
-     	<section class="portfolio section">
-		  <div class="container">
-		    <div class="top-side">
-		      <h4 class="title">MY WORKS</h4>
-		      <h2>PORTFOLIO</h2>
-		    </div>
-		    
-		    <div class="filters">
-		      <ul>
-		        <li class="active" data-filter="*">All</li>
-		        <li data-filter=".corporate">Corporate</li>
-		        <li data-filter=".personal">Personal</li>
-		        <li data-filter=".agency">Agency</li>
-		        <li data-filter=".portal">Portal</li>
-		      </ul>
-		    </div>
-		    
-		    <div class="filters-content">
-		      <div class="row grid">
-		        <div class="col-sm-4 all corporate">
-		          <div class="item">
-		            <img src="http://themes.muffingroup.com/betheme/documentation/doc-images/muffin-options/custom-js.png" alt="Work 1">
-		            <div class="p-inner">
-		              <h5>Work 1</h5>
-		              <div class="cat">Corporate</div>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="col-sm-4 all personal">
-		          <div class="item">
-		            <img src="http://themes.muffingroup.com/betheme/documentation/doc-images/muffin-options/custom-js.png" alt="Work 1">
-		            <div class="p-inner">
-		              <h5>Work 1</h5>
-		              <div class="cat">Personal</div>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="col-sm-4 all agency">
-		          <div class="item">
-		            <img src="http://themes.muffingroup.com/betheme/documentation/doc-images/muffin-options/custom-js.png" alt="Work 1">
-		            <div class="p-inner">
-		              <h5>Work 1</h5>
-		              <div class="cat">Agency</div>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="col-sm-4 all portal">
-		          <div class="item">
-		            <img src="http://themes.muffingroup.com/betheme/documentation/doc-images/muffin-options/custom-js.png" alt="Work 1">
-		            <div class="p-inner">
-		              <h5>Work 1</h5>
-		              <div class="cat">Portal</div>
-		            </div>
-		          </div>
-		        </div>
-		        
-		      </div>
-		    </div>
-		    
-		  </div>
-		</section>
+	      <div class="element-item webdesign" data-category="webdesign">
+	        <img src="http://www.sirenconsultingfirm.com/wp-content/uploads/2014/11/responsive-web-design-300x200.jpg" class="w-100 h-100">
+	      </div>
+	  
+	      <div class="element-item videomaker" data-category="videomaker">
+	        <img src="http://iphotochannel.com.br/wp-content/uploads/2017/08/iphoto-surfaceone-300x200.jpg" class="w-100 h-100">
+	      </div>
 
-   <!-- ***** Filter galary  end ***** -->
+	      <div class="element-item webdesign" data-category="webdesign">
+	        <img src="http://www.sirenconsultingfirm.com/wp-content/uploads/2014/11/responsive-web-design-300x200.jpg" class="w-100 h-100">
+	      </div>
+
+	      <div class="element-item logotipos" data-category="logotipos">
+	        <img src="https://designersbrasileiros.com.br/wp-content/uploads/2017/10/logotipos-com-mensagens-ocultas-300x200.png" class="w-100 h-100">
+	      </div>
+
+	  </div>
+
+	</div>
+
 	<!-- ***** Footer Start ***** -->
 	<footer>
 		<div class="container">
@@ -219,6 +196,7 @@
 	<!-- Global Init -->
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/slick/slick.min.js"></script>
+	
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 </body>

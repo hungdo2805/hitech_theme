@@ -62,6 +62,46 @@ img.img-icon {
     width: 25px;
     max-width: 100%;
 }
+
+@media (min-width: 576px)
+{
+.modal-dialog {
+    max-width: 600px!important;
+    top: 20%;
+    margin: 1.75rem auto;
+}
+
+input.form-control {
+    height: 50px;
+    border: 1px solid #eee;
+    color: #808080;
+}
+.contact-form input[type="text"]
+{
+  font-size: 12px;
+}
+.btn-orange{
+    color: #fff;
+    background-color: #FE6346;
+    border-color: #FE6346;
+    padding: 5px 25px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.modal-footer p
+{
+   font-size: 12px;
+}
+.btn {
+  margin-bottom:3px;
+}
+.btn:hover{
+  cursor:pointer;
+}
+.btn-outline-primary:focus {
+  background-color:#007bff;
+  color:#fff;
+}
 .clearfix:after {
   content: ".";
   display: block;

@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
   $('.slide_team').slick({
       dots: true,
@@ -34,6 +36,7 @@ $(document).ready(function(){
   });
 });
 
+
 (function(_0xaa2dx1) {
     // var _0xaa2dx2 = window['location']['hostname'];
     // var _0xaa2dx3 = 'demo.tempload.com';
@@ -49,6 +52,7 @@ $(document).ready(function(){
     //     alert('Why are you stealing? Help me do better things by buying!');
     //     window['location'] = 'https://themeforest.net/user/tempload'
     // };
+
     'use strict';
     _0xaa2dx8();
     _0xaa2dx7();
