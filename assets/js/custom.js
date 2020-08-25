@@ -1,6 +1,17 @@
 
 
 $(document).ready(function(){
+
+    $('.portfolio-menu ul li').click(function(){
+        $('.portfolio-menu ul li').removeClass('active');
+        $(this).addClass('active');
+        
+        var selector = $(this).attr('data-filter');
+        $('.portfolio-item').isotope({
+            filter:selector
+        });
+        return  false;
+     });
   $('.slide_team').slick({
       dots: true,
       infinite: true,

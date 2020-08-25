@@ -17,17 +17,7 @@
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 	<!-- Custom CSS -->
-	<link href="assets/css/orange.css?v=1.1" rel="stylesheet" type="text/css">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118135390-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-118135390-1');
-	</script> -->	
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
 </head>
 <body>
 
@@ -55,18 +45,19 @@
 
 						<!-- ***** Menu Start ***** -->
 						<ul class="nav">
-							<li><a href="index.html">Trang Chủ</a></li>
+							<li><a href="index.html">Trang chủ</a></li>
+							
 							<li class="submenu">
-								<a href="javascript:;">Giới Thiệu</a>
+								<a href="javascript:;">Dịch vụ</a>
 								<ul>
-									<li><a href="#features">Features</a></li>
-									<li><a href="#our-team">Our Team</a></li>
-									<li><a href="#pricing-plans">Pricing Plans</a></li>
-									<li><a href="#blog">Latests Blogs</a></li>
+									<li><a href="introduce.html">Giới thiệu</a></li>
+									<li><a href="our-team">Our Team</a></li>
+									<li><a href="pricing-plans">Pricing Plans</a></li>
+									<li><a href="blog">Latests Blogs</a></li>
 								</ul>
 							</li>
 
-							<li><a href="orange-index.html#welcome">Sản	phẩm của chúng tôi</a></li>
+							<li><a href="product.html">Sản	phẩm của chúng tôi</a></li>
                             <li><a href="blog.html">Blog</a></li>
 							<li><a href="contact.html">Liên hệ</a></li>
 						</ul>
@@ -78,7 +69,7 @@
 						<!-- ***** Header Buttons Start ***** -->
 						<ul class="header-buttons">
 							<!-- <li><a class="btn-nav-line" href="#">SIGN IN</a></li> -->
-							<li><a class="btn-nav-primary" href="#">ĐĂNG KÝ TƯ VẤN</a></li>
+							<li><a class="btn-nav-primary" href="#" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ TƯ VẤN</a></li>
 						</ul>
 						<!-- ***** Header Buttons End ***** -->
 					</nav>
@@ -119,16 +110,7 @@
 						<div class="contact">
 							<div class="map-wrapper">
 								<!-- ***** Google Maps Start ***** -->
-								<div class="map-canvas"
-									data-zoom="12"
-									data-lat="-37.811085"
-									data-lng="144.955631"
-									data-type="roadmap"
-									data-hue="#ffc400"
-									data-title="Jirono"
-									data-icon-path="assets/images/marker-orange.png"
-									data-content="455 West Orchard Street<br>Kings Mountain, NC 28086<br><br><a href='mailto:support@yourbrand.com'>mailto:support@yourbrand.com</a>">
-								</div>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.0071375678453!2d105.7990144146591!3d21.58564448569937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31352746c9f6de05%3A0x319887a129af3932!2zTmjDoCB2xINuIGjDs2EgU8ahbiBUaeG6v24!5e0!3m2!1svi!2s!4v1598369270644!5m2!1svi!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 								<!-- ***** Google Maps End ***** -->
 							</div>
 							<div class="contact-info">
@@ -145,7 +127,7 @@
 										<div class="item">
 											<i class="fa fa-phone"></i>
 											<div class="txt">
-												<span>(272) 211-7370<br>(524) 386-5730</span>
+												<span>(272) 211-7370</span>
 											</div>
 										</div>
 									</div>
@@ -154,12 +136,6 @@
 											<i class="fa fa-envelope"></i>
 											<div class="txt">
 												<span><a href="mailto:info@yourbrand.com">info@yourbrand.com</a></span>
-											</div>
-										</div>
-										<div class="item">
-											<i class="fa fa-envelope"></i>
-											<div class="txt">
-												<span><a href="mailto:support@yourbrand.com">support@yourbrand.com</a></span>
 											</div>
 										</div>
 									</div>
@@ -179,10 +155,14 @@
 							<div class="row">
 								<!-- ***** Contact Text Start ***** -->
 								<div class="col-lg-4 col-md-6 col-sm-12">
-									<h5 class="margin-bottom-30">Get in touch</h5>
+									<h5 class="margin-bottom-30">Liên hệ</h5>
 									<div class="contact-text">
 										<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tempus magna vel turpis pharetra dictum. </p>
-										<p>Sed blandit tempus purus, sed sodales leo rutrum vel. Nam vulputate ipsum ac est congue, eget commodo magna lobortis.</p>
+										<div class="info-contact">
+											<p><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> Tầng 2, Số 65 Hoàng Văn Thụ, P. Phan Đình Phùng, TP Thái Nguyên</p>
+											<p><span><i class="fa fa-envelope" aria-hidden="true"></i></i></span>dohung28599@gmail.com</p>
+											<p><span><i class="fa fa-phone" aria-hidden="true"></i></span>0396645809</p>
+										</div>
 									</div>
 								</div>
 								<!-- ***** Contact Text End ***** -->
@@ -190,20 +170,28 @@
 								<!-- ***** Contact Form Start ***** -->
 								<div class="col-lg-8 col-md-6 col-sm-12">
 									<div class="contact-form">
-										<div class="row">
-											<div class="col-lg-6 col-md-12 col-sm-12">
-												<input type="text" placeholder="Name, surname">
+										<form action="">
+											<div class="row">
+												<div class="col-lg-6 col-md-12 col-sm-12">
+													<input type="text" placeholder="Họ Và Tên">
+												</div>
+												<div class="col-lg-6 col-md-12 col-sm-12">
+													<input type="text" placeholder="E-Mail">
+												</div>
+												<div class="col-lg-6 col-md-12 col-sm-12">
+													<input type="text" placeholder="Số Điện Thoại">
+												</div>
+												<div class="col-lg-6 col-md-12 col-sm-12">
+													<input type="text" placeholder="Tiêu Đề">
+												</div>
+												<div class="col-lg-12">
+													<textarea placeholder="Nội Dung"></textarea>
+												</div>
+												<div class="col-lg-12">
+													<button type="submit" class="btn-primary-line">Gửi Đi</button>
+												</div>
 											</div>
-											<div class="col-lg-6 col-md-12 col-sm-12">
-												<input type="text" placeholder="E-Mail">
-											</div>
-											<div class="col-lg-12">
-												<textarea placeholder="Your message"></textarea>
-											</div>
-											<div class="col-lg-12">
-												<button class="btn-primary-line">SEND</button>
-											</div>
-										</div>
+										</form>
 									</div>
 								</div>
 								<!-- ***** Contact Form End ***** -->

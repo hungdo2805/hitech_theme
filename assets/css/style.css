@@ -43,65 +43,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
-.image-thumb
-{
-    width:100%;
-    height: 100px;
-    background-size: cover;
-    object-fit: cover;
-    
-}
 
-p.title-bottom {
-    font-size: 18px;
-    font-weight: 700;
-    color: #555;
-}
-
-img.img-icon {
-    width: 25px;
-    max-width: 100%;
-}
-
-@media (min-width: 576px)
-{
-.modal-dialog {
-    max-width: 600px!important;
-    top: 20%;
-    margin: 1.75rem auto;
-}
-
-input.form-control {
-    height: 50px;
-    border: 1px solid #eee;
-    color: #808080;
-}
-.contact-form input[type="text"]
-{
-  font-size: 12px;
-}
-.btn-orange{
-    color: #fff;
-    background-color: #FE6346;
-    border-color: #FE6346;
-    padding: 5px 25px;
-    font-weight: 500;
-    font-size: 16px;
-}
-.modal-footer p
-{
-   font-size: 12px;
-}
-.btn {
-  margin-bottom:3px;
-}
-.btn:hover{
-  cursor:pointer;
-}
-.btn-outline-primary:focus {
-  background-color:#007bff;
-  color:#fff;
-}
 .clearfix:after {
   content: ".";
   display: block;
@@ -3271,6 +3213,7 @@ contact
   margin-bottom: 0px !important;
 }
 
+
 @media (max-width: 991px) {
   .contact {
     overflow: initial !important;
@@ -3373,3 +3316,298 @@ preloader
     transform: scale(1.2, 1);
   }
 }
+
+.image-thumb
+{
+    width:100%;
+    height: 100px;
+    background-size: cover;
+    object-fit: cover;
+    
+}
+.spad{
+  padding-top: 150px;
+}
+p.title-bottom {
+    font-size: 18px;
+    font-weight: 700;
+    color: #555;
+}
+
+img.img-icon {
+    width: 25px;
+    max-width: 100%;
+}
+
+@media (min-width: 576px)
+{
+.modal-dialog {
+    max-width: 550px!important;
+    top: 10%;
+    margin: 1.75rem auto;
+}
+
+input.form-control {
+    height: 45px;
+    border: 1px solid #eee;
+    color: #808080;
+    outline: none;
+}
+.form-control:focus
+{
+  box-shadow: none!important;
+}
+
+input.form-control:focus {
+    border: 1px solid #FE6346;
+    outline: none;
+}
+.contact-form input[type="text"]
+{
+  font-size: 12px;
+}
+.btn-orange{
+    color: #fff;
+    background-color: #FE6346;
+    border-color: #FE6346;
+    padding: 5px 25px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.modal-footer p
+{
+   font-size: 12px;
+}
+.portfolio-menu{
+  text-align:center;
+}
+.portfolio-menu ul li{
+  display:inline-block;
+  margin:0 10px;
+  list-style:none;
+  cursor:pointer;
+  -webkit-transition:all 05s ease;
+  -moz-transition:all 05s ease;
+  -ms-transition:all 05s ease;
+  -o-transition:all 05s ease;
+  transition:all .5s ease;
+}
+
+.portfolio-item{
+  /*width:100%;*/
+}
+.portfolio-item .item{
+  /*width:303px;*/
+  float:left;
+  margin-bottom:10px;
+}
+
+.btn-filter-orange {
+    color: #FE6346;
+    background-color: #fff;
+    border-color: #FE6346;
+    padding: 5px 15px;
+    font-weight: 700;
+    font-size: 15px;
+    margin:0px 10px;
+}
+li.btn.btn-filter-orange.active{
+  background-color: #FE6346;
+  color: #fff;
+}
+.info-contact p span {
+    font-size: 18px;
+    color:#FE6346;
+    padding-right: 8px;
+}
+.hotline-phone-ring-wrap {
+position: fixed;
+bottom: 0;
+left: 0;
+z-index: 999999;
+}
+.zalo-wrap {
+position: fixed;
+bottom: 50px;
+right: 0;
+z-index: 999999;
+}
+.messenger-wrap {
+position: fixed;
+bottom: 0;
+right: 0;
+z-index: 999999;
+}
+.hotline-phone-ring {
+position: relative;
+visibility: visible;
+background-color: transparent;
+width: 110px;
+height: 110px;
+cursor: pointer;
+z-index: 11;
+-webkit-backface-visibility: hidden;
+-webkit-transform: translateZ(0);
+transition: visibility .5s;
+left: 0;
+bottom: 0;
+display: block;
+}
+.hotline-phone-ring-circle {
+width: 85px;
+height: 85px;
+top: 10px;
+left: 10px;
+position: absolute;
+background-color: transparent;
+border-radius: 100%;
+border: 2px solid #e60808;
+-webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+transition: all .5s;
+-webkit-transform-origin: 50% 50%;
+-ms-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+opacity: 0.5;
+}
+.hotline-phone-ring-circle-fill {
+width: 55px;
+height: 55px;
+top: 25px;
+left: 25px;
+position: absolute;
+background-color: #FE6346;
+border-radius: 100%;
+border: 2px solid transparent;
+-webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+transition: all .5s;
+-webkit-transform-origin: 50% 50%;
+-ms-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+}
+.hotline-phone-ring-img-circle {
+background-color: #e60808;
+width: 33px;
+height: 33px;
+top: 37px;
+left: 37px;
+position: absolute;
+background-size: 20px;
+border-radius: 100%;
+border: 2px solid transparent;
+-webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+-webkit-transform-origin: 50% 50%;
+-ms-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 0.5s;
+}
+.hotline-phone-ring-img-circle .pps-btn-img {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+}
+.hotline-phone-ring-img-circle .pps-btn-img img {
+width: 20px;
+height: 20px;
+}
+.hotline-bar {
+position: absolute;
+background: #FE6346;
+height: 40px;
+width: 180px;
+line-height: 40px;
+border-radius: 3px;
+border:2px solid #fff;
+padding: 0 10px;
+background-size: 100%;
+cursor: pointer;
+transition: all 0.8s;
+-webkit-transition: all 0.8s;
+z-index: 9;
+box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+border-radius: 50px !important;
+/* width: 175px !important; */
+left: 33px;
+bottom: 37px;
+}
+.hotline-bar > a {
+color: #fff;
+text-decoration: none;
+font-size: 15px;
+font-weight: bold;
+text-indent: 50px;
+display: block;
+letter-spacing: 1px;
+line-height: 40px;
+font-family: Arial;
+}
+.hotline-bar > a:hover,
+.hotline-bar > a:active {
+color: #fff;
+}
+@-webkit-keyframes phonering-alo-circle-anim {
+0% {
+-webkit-transform: rotate(0) scale(0.5) skew(1deg);
+-webkit-opacity: 0.1;
+}
+30% {
+-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+-webkit-opacity: 0.5;
+}
+100% {
+-webkit-transform: rotate(0) scale(1) skew(1deg);
+-webkit-opacity: 0.1;
+}
+}
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+0% {
+-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+opacity: 0.6;
+}
+50% {
+-webkit-transform: rotate(0) scale(1) skew(1deg);
+opacity: 0.6;
+}
+100% {
+-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+opacity: 0.6;
+}
+}
+@-webkit-keyframes phonering-alo-circle-img-anim {
+0% {
+-webkit-transform: rotate(0) scale(1.1) skew(1deg);
+}
+10% {
+-webkit-transform: rotate(-25deg) scale(1.1) skew(1deg);
+}
+20% {
+-webkit-transform: rotate(25deg) scale(1.1) skew(1deg);
+}
+30% {
+-webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+}
+40% {
+-webkit-transform: rotate(25deg) scale(1.1) skew(1deg);
+}
+50% {
+-webkit-transform: rotate(0) scale(1.1) skew(1deg);
+}
+100% {
+-webkit-transform: rotate(0) scale(1.1) skew(1deg);
+}
+}
+@media (max-width: 768px) {
+.hotline-bar {
+display: none;
+}
+}
+
