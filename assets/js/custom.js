@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
 
+
     $('.portfolio-menu ul li').click(function(){
         $('.portfolio-menu ul li').removeClass('active');
         $(this).addClass('active');
@@ -12,39 +13,64 @@ $(document).ready(function(){
         });
         return  false;
      });
-  $('.slide_team').slick({
-      dots: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      arrows:true,
-      autoplay:true,
-        responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
+      $('.slide_team').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          arrows:true,
+          autoplay:true,
+            responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
 
-      ]
+          ]
+      });
+
+
+  $(window).scroll(function(event) {
+    console.log('Chay den vi tri:');
+    console.log($('html,body').scrollTop());
+    var vitri=$('html,body').scrollTop();
+
+    if(vitri>=850){
+     $('.arrow-up').addClass('visible-arrowup'); 
+   }  
+
+   if(vitri<850){
+     $('.arrow-up').removeClass('visible-arrowup'); 
+   } 
+ });
+
+    $('.arrow-up').on('click', function(event) {
+     event.preventDefault();
+    // $('html,body').animate({scrollTop: $('header').offset().top}, 100);
+
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
   });
+
+
 });
 
 
